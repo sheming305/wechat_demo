@@ -1,0 +1,9 @@
+<view class='pic_box'>
+    <view class='img_box' wx:for='{{pics}}' wx:key='this' >
+        <image class='img'src='{{item}}' mode='aspectFill' catchtap='previewImg' data-index='{{index}}'></image>
+        <icon type='clear' size='20' class='icon_clear' catchtap='clearImg' data-index='{{index}}'></icon>
+    </view>
+    <image src='/image/icon_add.png' class='icon_add' catchtap='chooseImg'></image>
+</view>
+
+<button catchtap='uploadImg'>上传图片</button>

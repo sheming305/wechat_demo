@@ -1,0 +1,108 @@
+/* pages/rili/rili.wxss */
+page{
+  background: #fcc;
+  width: 100%;
+  height: 100%;
+}
+.page_bg{
+  width: 100%;
+  height: 100%;
+}
+.main{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.head{
+  display: flex;
+  padding: 22rpx;
+  box-sizing: border-box;
+  padding-bottom: 0;
+}
+.head_left{
+  flex: 1;
+}
+.year_box{
+  display: flex;
+  align-items: center;
+  height: 60rpx;
+  font-size: 32rpx;
+  color: #fff;
+}
+.goto{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+.month_text{
+  line-height: 80rpx;
+  font-size: 42rpx;
+  color: #fff;
+}
+.icon_add{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 30rpx;
+}
+/* 这里改变滑动高度 */
+swiper,swiper-item{
+  width: 100%;
+  height:100%;
+}
+.xingqi{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+.xingqi_sub{
+  width: 100rpx;
+  height: 70rpx;
+  margin-left: 6rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 32rpx;
+}
+
+.date_box{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+.date_sub{
+  width: 100rpx;
+  height: 70rpx;
+  margin-left: 6rpx;
+  text-align: center;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.date_text{
+  width: 100rpx;
+  height: 70rpx;
+  position: absolute;
+}
+
+.today_icon{
+  width: 55rpx;
+  height: 55rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin:auto;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 3px 3px 10px #666;
+  
+}

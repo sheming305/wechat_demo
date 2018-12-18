@@ -1,0 +1,31 @@
+<!-- 上面部分 -->
+<view class='head'>
+    <view class='head_left'>
+      <!-- 年份 -->
+      <view class='year_box'>
+        <text>{{dates[swiperIndex].year}}</text>
+        <image class='goto' src='/image/goto.png'></image>
+      </view>
+      <!-- 月份 -->
+      <view class='month_text'>{{monthEnglish[dates[swiperIndex].month]}}</view>
+    </view>
+    <image class='icon_add' catchtap='addtap' src='/image/icon_add1.png'></image>
+</view>
+<!-- 日历部分  主要部分 ，这里是滑动整页 如果只需要滑动部分，修改swiper和swiper-item高度即可-->
+<swiper circular current='1' bindchange='swiperChange' duration='300'>
+  <swiper-item wx:for='{{dateArr}}' wx:for-item='dateArrItem' wx:key='this'>
+    <!-- 星期 -->
+    <view class='xingqi'>
+      <text class='xingqi_sub' wx:for='{{week}}' wx:key='this'>{{item}}</text>
+    </view>
+    <!-- 下面的日期 -->
+    <view class='date_box'>
+      <view class='date_sub' wx:for='{{dateArrItem}}' wx:key='this' style='{{item.bg=="1"?"opacity: 0.3;":""}}' data-index='{{index}}' data-item='{{item}}' catchtap='dateTap'>
+        <!-- 选择当天的原型标记 -->
+        <view class='today_icon' wx:if='{{index+1==today}}'></view>
+        <!-- 每个天数显示 -->
+        <text class='date_text' style='{{index+1==today&&"color:#DD71E3;"}}'>{{item.date}}</text>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

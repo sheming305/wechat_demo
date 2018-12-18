@@ -1,0 +1,26 @@
+<!--上传图片文件的使用-->
+<text>上传文件,图片上传API</text>
+<button bindtap='updateImg'>上传图片</button>
+<!-- <image src="{{imgSrc}}"></image> -->
+<button bindtap='downImg'>下载图片</button>
+<!-- <image src="{{downimgSrc}}"></image> -->
+
+<!-- 获取用户的openid -->
+<button bindtap='login'>登陆按钮获取用户appid</button>
+<!-- 用户授权 -->
+
+<!-- 如果只是展示用户头像昵称，可以使用 <open-data /> 组件 -->
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<!-- 需要使用 button 来授权登录 -->
+<button
+  wx:if="{{canIUse}}"
+  open-type="getUserInfo"
+  bindgetuserinfo="bindGetUserInfo"
+  >授权登录</button
+>
+<view wx:else>请升级微信版本</view>
+
+
+
+

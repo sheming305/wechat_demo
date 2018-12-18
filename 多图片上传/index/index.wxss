@@ -1,0 +1,27 @@
+.pic_box{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 22rpx;
+}
+.icon_add,.img_box{
+  width: 160rpx;
+  height: 160rpx;
+  padding: 20rpx;
+  border: 1px solid #efefef;
+  margin:0 0 22rpx 22rpx; 
+  box-sizing: border-box;
+}
+.img_box{
+  position: relative;
+  padding:0;
+}
+.img{
+  width: 160rpx;
+  height: 160rpx;
+}
+.icon_clear{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%,-50%);
+}
