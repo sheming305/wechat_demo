@@ -1,1 +1,2 @@
 <text>微信支付</text>
+<button bindtap='wxpay'>微信支付示例</button>

@@ -28,7 +28,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -53,6 +53,23 @@
 					"name": "登陆授权",
 					"pathName": "pages/login/login",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客服会话",
+					"pathName": "pages/my_concat/my_concat",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "websoket",
+					"pathName": "pages/my_websoket/my_websoket",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "微信支付",
+					"pathName": "pages/my_wechatPay/my_wechatPay"
 				}
 			]
 		}

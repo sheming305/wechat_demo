@@ -1,0 +1,33 @@
+<!--pages/my_concat/my_concat.wxml-->
+<!-- <contact-button type='default-light' size='20' session-from='weapp'>客服消息</contact-button> -->
+<button open-type="contact" session-from='weapp' bindcontact="handleContact">客服消息</button>
+
+
+
+<!-- 支付购买模板消息  -->
+<button bindtap="onGetOpenid">获取opendid</button>
+<!-- <view>{{opid}}</view> -->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <label class="section section_gap">
+    <text>购买地点</text>
+    <input type="text" name="site" placeholder="" />
+  </label>
+  <view class="section">
+    <text>购买时间</text>
+    <picker mode="date" name="date" value="{{date}}" start="2018-1-12" end="2019-12-30" bindchange="bindTimeChange">
+      <view class="picker"> 当前选择: {{date}} </view>
+    </picker>
+  </view>
+  <view class="section">
+    商品名称
+    <input name="uname" placeholder="" />
+  </view>
+  <view class="section">
+    商品单号
+    <input name="unumber" placeholder="" />
+  </view>
+  <view class="btn-area">
+    <button form-type="submit">提交</button>
+    <button form-type="reset">重置</button>
+  </view>
+</form>
