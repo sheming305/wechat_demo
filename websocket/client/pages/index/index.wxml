@@ -1,0 +1,18 @@
+<!-- index.wxml -->
+<view class="container">
+  <button bindtap="connect">建立连接</button>
+  <view class="stockboard">
+    <view class="stock">
+      <text>软谋</text>
+      <text class="{{flag.ruanmou}}">{{stock.ruanmou}}</text>
+    </view>
+    <view class="stock">
+      <text>腾讯</text>
+      <text class="{{flag.tencent}}">{{stock.tencent}}</text>
+    </view>
+    <view class="stock">
+      <text>京东</text>
+      <text class="{{flag.JD}}">{{stock.JD}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+.up {
+  color: red;
+}
+.down {
+  color: greenyellow;
+}
